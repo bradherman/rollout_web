@@ -1,4 +1,3 @@
-require 'twitter-bootstrap-rails'
 require 'jquery-rails'
 
 module RolloutWeb
