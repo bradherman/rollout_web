@@ -1,5 +1,3 @@
-require 'jquery-rails'
-
 module RolloutWeb
   class Engine < ::Rails::Engine
     isolate_namespace RolloutWeb
