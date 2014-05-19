@@ -25,6 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rollout'
   spec.add_dependency 'twitter-bootstrap-rails'
   spec.add_dependency 'jquery-rails'
-  spec.add_dependency 'sass-rails'
   spec.add_dependency 'coffee-script'
 end
