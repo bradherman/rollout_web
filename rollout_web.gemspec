@@ -23,6 +23,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
 
   spec.add_dependency 'rollout'
-  spec.add_dependency 'jquery-rails'
   spec.add_dependency 'coffee-script'
 end
