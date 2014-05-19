@@ -1,5 +1,5 @@
 require "rollout_web/version"
+require "rollout_web/engine"
 
 module RolloutWeb
-  # Your code goes here...
 end

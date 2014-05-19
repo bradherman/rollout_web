@@ -1,0 +1,12 @@
+<div class="row" id="flags">
+  <input class="search" placeholder="Search" />
+  <button class="sort" data-sort="name">
+    Sort by name
+  </button>
+
+  <ul class="list">
+    <% @flags.each do |flag| %>
+      <%= render 'flag', flag: flag %>
+    <% end %>
+  </ul>
+</div>

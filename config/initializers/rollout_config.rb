@@ -1,0 +1,1 @@
+config = ENV.fetch('RAILS_ROLLOUT_STORE', '127.0.0.1:6379')
