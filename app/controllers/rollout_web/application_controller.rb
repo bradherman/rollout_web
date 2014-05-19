@@ -9,9 +9,9 @@ module RolloutWeb
     private
 
     def authorize
-      if ENV["RESQUE_WEB_HTTP_BASIC_AUTH_USER"] && ENV["RESQUE_WEB_HTTP_BASIC_AUTH_PASSWORD"]
+      if ENV["ROLLOUT_WEB_HTTP_BASIC_AUTH_USER"] && ENV["ROLLOUT_WEB_HTTP_BASIC_AUTH_PASSWORD"]
         authenticate_or_request_with_http_basic  do |u, p| 
-          u == ENV["RESQUE_WEB_HTTP_BASIC_AUTH_USER"] && p == ENV["RESQUE_WEB_HTTP_BASIC_AUTH_PASSWORD"]
+          u == ENV["ROLLOUT_WEB_HTTP_BASIC_AUTH_USER"] && p == ENV["ROLLOUT_WEB_HTTP_BASIC_AUTH_PASSWORD"]
         end
       end
     end
