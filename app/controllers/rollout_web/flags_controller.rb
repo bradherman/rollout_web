@@ -1,7 +1,11 @@
 module RolloutWeb
   class FlagsController < ApplicationController
     def index
-      @flags = FLAGS
+      @flags = if defined? FLAGS
+        FLAGS + ROLLOUT.features
+      else
+        ROLLOUT.features
+      end.uniq.map{ |x| ROLLOUT.get(x) }
     end
 
     def update

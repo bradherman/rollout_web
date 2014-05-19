@@ -1,1 +1,1 @@
-config = ENV.fetch('RAILS_ROLLOUT_STORE', '127.0.0.1:6379')
+FLAGS = YAML.load(IO.read("config/rollout.yml")) rescue nil

@@ -1,4 +1,15 @@
-<li class='col-lg-2 col-md-3 col-sm-6'>
-  <h3 class="name"><%= flag %></h3>
-  <input type="checkbox" name="<%= flag %>" <%= "checked" if ROLLOUT.active?(flag) %>/>
+<li class='col-lg-3 col-md-4 col-sm-6 flag'>
+  <h3 class="name"><%= flag.name %></h3>
+  <input type="checkbox" name="<%= flag.name %>" <%= "checked" if flag.percentage > 0 || flag.users.present? || flag.groups.present? %>/>
+  <% if flag.groups.present? %>
+    <p><b>Enabled for groups:</b> <%= flag.groups*', ' %></p>
+  <% else %>
+    <p>No groups enabled</p>
+  <% end %>
+  <% if flag.users.present? %>
+    <p><b>Enabled for users:</b> <%= flag.users*', ' %></p>
+  <% else %>
+    <p>No users enabled</p>
+  <% end %>
+  <p><b>Enabled for percentage:</b> <%= flag.percentage %>%</p>
 </li>
