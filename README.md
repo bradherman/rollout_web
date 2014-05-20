@@ -18,7 +18,7 @@ Or install it yourself as:
 
 Add routes:
 
-    mount RailsAdmin::Engine => '/rollout', :as => 'rollout_web'
+    mount RolloutWeb::Engine => '/rollout', :as => 'rollout_web'
     
 ## Usage
 
