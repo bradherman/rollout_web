@@ -1,1 +1,1 @@
-FLAGS = YAML.load(IO.read("config/rollout.yml")) rescue nil
+FLAGS = YAML.load(IO.read("config/rollout.yml")) rescue []
