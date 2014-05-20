@@ -16,6 +16,10 @@ Or install it yourself as:
 
     $ gem install rollout_web
 
+Add routes:
+
+    mount RolloutWeb::Engine => '/rollout', :as => 'rollout_web'
+    
 ## Usage
 
 Because rollout keys aren't initialized until explicitly enabled/disabled, I've set it up so that you can define all of yours flags up front in a yml config file like so:
