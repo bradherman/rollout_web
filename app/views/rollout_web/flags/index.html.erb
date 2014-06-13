@@ -5,8 +5,8 @@
   </button>
 
   <ul class="list">
-    <% @flags.each do |flag| %>
-      <%= render 'flag', flag: flag %>
+    <% @flags.each_with_index do |flag, index| %>
+      <%= render 'flag', flag: flag, index: index %>
     <% end %>
   </ul>
 </div>

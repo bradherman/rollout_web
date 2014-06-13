@@ -1,6 +1,6 @@
 <li class='col-lg-3 col-md-4 col-sm-6 flag'>
   <h3 class="name"><%= flag.name %></h3>
-  <input type="checkbox" name="<%= flag.name %>" <%= "checked" if flag.percentage > 0 || flag.users.present? || flag.groups.present? %>/>
+  <input type="checkbox" class='checkbox' name="<%= flag.name %>" <%= "checked" if flag.percentage > 0 || flag.users.present? || flag.groups.present? %>/>
   <% if flag.groups.present? %>
     <p><b>Enabled for groups:</b> <%= flag.groups*', ' %></p>
   <% else %>
@@ -11,5 +11,6 @@
   <% else %>
     <p>No users enabled</p>
   <% end %>
-  <p><b>Enabled for percentage:</b> <%= flag.percentage %>%</p>
+  <p><b>Enabled for percentage:</b> <span class='pct'><%= flag.percentage %></span>%</p>
+  <div class="slider"></div>
 </li>
