@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rollout_web (0.0.1)
+    rollout_web (0.0.6)
       coffee-script
       rollout
 
@@ -75,7 +75,6 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.3.2)
     redis (3.0.7)
-    ref (1.0.5)
     rollout (2.0.0)
       redis
     rubinius-coverage (2.0.3)
@@ -291,9 +290,6 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    therubyracer (0.12.1)
-      libv8 (~> 3.16.14.0)
-      ref
     thor (0.19.1)
     thread_safe (0.3.3)
     tilt (1.4.1)
@@ -311,6 +307,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.6)
+  execjs
   libv8 (~> 3.16.14.3)
   racc
   rails
@@ -321,6 +318,4 @@ DEPENDENCIES
   rubinius-coverage
   rubinius-profiler
   rubysl (~> 2.0)
-  therubyracer (~> 0.12.1)
-  therubyrhino (= 2.0.2)
   uglifier (>= 1.0.3)
