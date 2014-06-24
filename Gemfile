@@ -9,8 +9,10 @@ gem 'redis'
 
 gem 'uglifier', '>= 1.0.3'
 
-gem 'libv8',        '~> 3.16.14.3', platforms: :ruby
+gem 'libv8', git: 'git://github.com/cowboyd/libv8.git', submodules: true
 gem 'execjs'
+
+gem 'coffee-rails'
 
 platforms :rbx do
   gem 'rubysl', '~> 2.0'
